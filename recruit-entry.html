@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>お問い合わせ | 株式会社 ツカサパブリックワークス</title>
+    <title>応募フォーム｜株式会社 ツカサパブリックワークス</title>
     <meta
       name="description"
-      content="株式会社 ツカサパブリックワークスへのお問い合わせページ。土木建設事業、収集運搬業務、会社見学に関するご相談を受け付けています。"
+      content="株式会社 ツカサパブリックワークスの応募フォーム。施工管理、土木作業員、廃棄物収集運搬スタッフへのご応募・ご相談はこちらからお問い合わせください。"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -40,22 +40,20 @@
     </header>
 
     <main id="top">
-      <section class="hero page-hero">
-        <img class="hero-image" src="./assets/top-hero.png" alt="土木建設と収集運搬業務を表すお問い合わせビジュアル" />
+      <section class="hero page-hero guideline-hero" aria-label="応募フォームメインビジュアル">
+        <img class="hero-image" src="./assets/recruit-hero.png" alt="現場で働くスタッフの様子" />
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <p class="eyebrow">Contact</p>
-          <h1>お問い合わせ</h1>
-          <p class="lead">
-            土木建設事業、収集運搬業務、会社見学に関するご相談はこちらからお問い合わせください。
-          </p>
+          <p class="eyebrow">Entry</p>
+          <h1>応募フォーム</h1>
+          <p class="lead">まずは話を聞いてみたい方も、こちらからお気軽にご連絡ください。</p>
         </div>
       </section>
 
-      <section class="section contact-form-section" id="contact-form">
+      <section class="section contact-form-section entry-form-section" id="entry-form">
         <div class="section-heading">
-          <p class="section-kicker">Contact Form</p>
-          <h2>お問い合わせフォーム</h2>
+          <p class="section-kicker">Entry Form</p>
+          <h2>応募・お問い合わせ内容</h2>
           <p>内容を確認後、担当者より折り返しご連絡いたします。</p>
         </div>
         <form class="contact-form" action="mailto:tsukasa-pw@mb.tcn.ne.jp" method="post" enctype="text/plain">
@@ -65,8 +63,8 @@
               <input type="text" name="お名前" autocomplete="name" required />
             </label>
             <label>
-              <span>会社名・団体名</span>
-              <input type="text" name="会社名・団体名" autocomplete="organization" />
+              <span>ふりがな</span>
+              <input type="text" name="ふりがな" autocomplete="name" />
             </label>
             <label>
               <span>メールアドレス</span>
@@ -74,23 +72,36 @@
             </label>
             <label>
               <span>電話番号</span>
-              <input type="tel" name="電話番号" autocomplete="tel" />
+              <input type="tel" name="電話番号" autocomplete="tel" required />
+            </label>
+          </div>
+          <div class="form-grid">
+            <label>
+              <span>希望職種</span>
+              <select name="希望職種" required>
+                <option value="">選択してください</option>
+                <option value="施工管理">施工管理</option>
+                <option value="土木作業員">土木作業員</option>
+                <option value="廃棄物収集運搬スタッフ">廃棄物収集運搬スタッフ</option>
+                <option value="まずは相談したい">まずは相談したい</option>
+              </select>
+            </label>
+            <label>
+              <span>入社希望時期</span>
+              <select name="入社希望時期">
+                <option value="">選択してください</option>
+                <option value="できるだけ早く">できるだけ早く</option>
+                <option value="1か月以内">1か月以内</option>
+                <option value="3か月以内">3か月以内</option>
+                <option value="相談して決めたい">相談して決めたい</option>
+              </select>
             </label>
           </div>
           <label>
-            <span>お問い合わせ種別</span>
-            <select name="お問い合わせ種別" required>
-              <option value="">選択してください</option>
-              <option value="土木建設事業">土木建設事業について</option>
-              <option value="収集運搬業務">収集運搬業務について</option>
-              <option value="会社見学">会社見学について</option>
-              <option value="その他">その他</option>
-            </select>
+            <span>お問い合わせ内容・ご質問</span>
+            <textarea name="お問い合わせ内容・ご質問" rows="8" placeholder="応募前に確認したいこと、希望する働き方、面接希望日などがあればご記入ください。"></textarea>
           </label>
-          <label>
-            <span>お問い合わせ内容</span>
-            <textarea name="お問い合わせ内容" rows="7" required></textarea>
-          </label>
+          <p class="form-note">送信するとメールソフトが起動します。うまく送信できない場合は、直接 <a href="mailto:tsukasa-pw@mb.tcn.ne.jp">tsukasa-pw@mb.tcn.ne.jp</a> までご連絡ください。</p>
           <button class="button primary" type="submit">送信する</button>
         </form>
       </section>
@@ -118,7 +129,7 @@
           <a href="./contact.html">お問い合わせ</a>
         <a href="./company.html">会社情報</a>
             <a href="./recruit.html">採用情報</a>
-        <a href="./recruit-guideline.html">募集要項</a>
+          <a href="./recruit-guideline.html">募集要項</a>
         </nav>
       </div>
       <div class="footer-bottom">
